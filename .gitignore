@@ -12,7 +12,7 @@
 !Feasible_Hypercubemap_Generation.ipynb
 !MC_Dropout_Quantification.ipynb
 !DNN_MV_Interaction_Analysis.ipynb
-!Data/Knee_Connection_Output_red.csv
+#!Data/Knee_Connection_Output_red.csv
 !AL_API/API.py
 !AL_API/AL_API.ipynb
 !AL_API/C5_Geometrie.xlsx
