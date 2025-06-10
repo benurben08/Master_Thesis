@@ -13,7 +13,6 @@
 !MC_Dropout_Quantification.ipynb
 !DNN_MV_Interaction_Analysis.ipynb
 !Data/Knee_Connection_Output_red.csv
-!AL_API/
 !AL_API/API.py
 !AL_API/AL_API.ipynb
 !AL_API/C5_Geometrie.xlsx
@@ -23,12 +22,10 @@
 !AL_API/Corner_Stiff2_Wid.ideaCon
 !AL_API/Corner_Stiffner.ideaCon
 !AL_API/Corner.ideaCon
-!Saved Models/
 !Saved Models/DNN_Model_Full_V2/DNN_Model_Full_V2.pth
 !Saved Variables/
 !Saved Variables/hypercubemap.npy
 !Saved Variables/hypercubemap_mapping.npy
 !Saved Variables/uncertainty_fulldf.npy
-!Environments/
 !Environments/API.yaml
 !Environments/MA.yaml
