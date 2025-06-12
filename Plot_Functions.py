@@ -69,8 +69,8 @@ def plot_MV_interaction(x_profile,model,df,n=10,fixed_features=None):
                     linewidth=1,
                     label="Input Profile")
 
-    plt.xlabel("MRd [kNm]")
-    plt.ylabel("VRd [kN]")
+    plt.xlabel(rf"{plot_params.feature_labels['M_Rd']}")
+    plt.ylabel(rf"{plot_params.feature_labels['V_Rd']}")
     plt.grid(True, which='major', color='k', linestyle='--', linewidth=0.5, alpha=0.5)
 
     legend_labels = ['Predicted', 'Ground Truth']
