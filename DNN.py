@@ -56,11 +56,11 @@ class DNN(nn.Module):
 
         # Training features
         self.features = ["A_x", "Iy_x", "Wely_x", "Wply_x", "fy_x", 
-                    "A_y", "Iy_y", "Wely_y", "Wply_y", "fy_y", 
-                    "Gamma", "Offset",
-                    "h_wid", "b_wid", "d_wid", "t_fwid", "t_wwid", 
-                    "t_stiffc",
-                    "V_contribution", "M_contribution"] 
+                        "A_y", "Iy_y", "Wely_y", "Wply_y", "fy_y", 
+                        "Gamma", "Offset",
+                        "h_wid", "b_wid", "d_wid", "t_fwid", "t_wwid", 
+                        "t_stiffc",
+                        "V_contribution", "M_contribution"] 
         
         # Output target
         self.target = ["target"]
