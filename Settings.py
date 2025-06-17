@@ -1,6 +1,7 @@
 import os
 import matplotlib as mpl
 import sys
+import matplotlib.font_manager as fm
 
 class Directory:
 
@@ -41,7 +42,7 @@ class Plotting_Parameters:
 
     def __init__(self):
         self.params = {
-            'font.family': 'Arial',
+            'font.family': 'Charis SIL',
             'font.size': 10,
             'axes.labelsize': 12,
             'axes.titlesize': 12,
@@ -65,10 +66,9 @@ class Plotting_Parameters:
         }
         self.update()
 
-        self.cmap = 'tab10'
-        self.colors = mpl.pyplot.cm.tab10.colors
+        self.cmap = 'Set3'
+        self.colors = mpl.pyplot.cm.Set3.colors
         self.morecolors = mpl.pyplot.cm.tab20.colors
-
 
         self.feature_labels = {'A_x': r'$A_x$ $\mathrm{[mm^2]}$',
                   'Iy_x': r'$I_{y,x}$ $\mathrm{[mm^4]}$',
@@ -106,6 +106,8 @@ class Plotting_Parameters:
                   'Cat_h': r'$Cat_{h}$ $\mathrm{[mm]}$',
                   'Cat_t_stiffc': r'$Cat_{t_{stiff,c}}$ $\mathrm{[mm]}$',
                   'b_wid': r'$b_{wid}$ $\mathrm{[mm]}$',
+                  'M': r'$M$ $\mathrm{[kNm]}$',
+                  'V': r'$V$ $\mathrm{[kN]}$',
                 }
 
     def repeated_colors(self, values):
@@ -114,3 +116,14 @@ class Plotting_Parameters:
     
     def update(self):
         mpl.rcParams.update(self.params)
+
+    def get_available_fonts(self):
+        # Get a list of all font objects known to Matplotlib
+        font_list = fm.fontManager.ttflist + fm.fontManager.afmlist
+
+        # Extract unique font family names
+        available_font_families = sorted(list(set([f.name for f in font_list])))
+
+        print("Available Font Families in Matplotlib:")
+        for font_family in available_font_families:
+            print(f"- {font_family}")

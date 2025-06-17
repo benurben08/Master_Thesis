@@ -17,6 +17,7 @@
 
 !AL_API/
 AL_API/*
-!AL_API/AL_API.ipynb
+!AL_API/Local_AL.ipynb
 !AL_API/LocalObjectives.ipynb
+!AL_API/Global_AL.ipynb
 
