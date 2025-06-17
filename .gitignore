@@ -14,6 +14,7 @@
 !Feasible_Hypercubemap_Generation.ipynb
 !MC_Dropout_Quantification.ipynb
 !DNN_MV_Interaction_Analysis.ipynb
+!requirements.txt
 
 !AL_API/
 AL_API/*

@@ -43,19 +43,19 @@ class Plotting_Parameters:
     def __init__(self):
         self.params = {
             'font.family': 'Charis SIL',
-            'font.size': 10,
-            'axes.labelsize': 12,
-            'axes.titlesize': 12,
+            'font.size': 11,
+            'axes.labelsize': 11,
+            'axes.titlesize': 11,
             'axes.linewidth': 1,
-            'xtick.labelsize': 10,
-            'ytick.labelsize': 10,
+            'xtick.labelsize': 8,
+            'ytick.labelsize': 8,
             'xtick.direction': 'in',
             'ytick.direction': 'in',
             'xtick.major.size': 5,
             'ytick.major.size': 5,
             'xtick.minor.size': 3,
             'ytick.minor.size': 3,
-            'legend.fontsize': 10,
+            'legend.fontsize': 9,
             'legend.frameon': False,
             'legend.loc': 'best',
             'figure.figsize': (6, 4),
@@ -67,8 +67,9 @@ class Plotting_Parameters:
         self.update()
 
         self.cmap = 'Set3'
-        self.colors = mpl.pyplot.cm.Set3.colors
+        self.colors = mpl.pyplot.cm.tab20.colors
         self.morecolors = mpl.pyplot.cm.tab20.colors
+        self.pastell = mpl.pyplot.cm.Set3.colors
 
         self.feature_labels = {'A_x': r'$A_x$ $\mathrm{[mm^2]}$',
                   'Iy_x': r'$I_{y,x}$ $\mathrm{[mm^4]}$',
