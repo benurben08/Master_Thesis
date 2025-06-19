@@ -67,7 +67,7 @@ class Plotting_Parameters:
         self.update()
 
         self.cmap = 'Set3'
-        self.colors = mpl.pyplot.cm.tab20.colors
+        self.colors = mpl.pyplot.cm.tab10.colors
         self.morecolors = mpl.pyplot.cm.tab20.colors
         self.pastell = mpl.pyplot.cm.Set3.colors
 
