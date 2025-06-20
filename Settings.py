@@ -134,11 +134,11 @@ class Plotting_Parameters:
         for font_family in available_font_families:
             print(f"- {font_family}")
 
-    def get_figsize(self,fraction, document_width=15.92, aspect_ratio=None):
+    def get_figsize(self,fraction,aspect_ratio=None, document_width=15.92):
         width_in = document_width / 2.54 * fraction
 
         if aspect_ratio is None:
             aspect_ratio = (5 ** 0.5 - 1) / 2  # golden ratio
 
-        height_in = width_in / aspect_ratio
+        height_in = width_in * aspect_ratio
         return width_in, height_in
