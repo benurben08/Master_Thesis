@@ -43,6 +43,8 @@ class Plotting_Parameters:
     def __init__(self):
         self.params = {
             'font.family': 'Charis SIL',
+            'mathtext.fontset': 'custom',
+            'mathtext.rm': 'Charis SIL',
             'font.size': 11,
             'axes.labelsize': 11,
             'axes.titlesize': 11,
@@ -66,50 +68,53 @@ class Plotting_Parameters:
         }
         self.update()
 
+        self.save_figures = False
+
         self.cmap = 'Set3'
         self.colors = mpl.pyplot.cm.tab10.colors
         self.morecolors = mpl.pyplot.cm.tab20.colors
         self.pastell = mpl.pyplot.cm.Set3.colors
 
-        self.feature_labels = {'A_x': r'$A_x$ $\mathrm{[mm^2]}$',
-                  'Iy_x': r'$I_{y,x}$ $\mathrm{[mm^4]}$',
-                  'tw_x': r'$t_{w,x}$ $\mathrm{[mm]}$',
-                  'Steel grade_x': r'$f_{y,x}$ $\mathrm{[MPa]}$',
-                  'M_Rd': r'$M_{Rd}$ $\mathrm{[kNm]}$',
-                  'V_Rd': r'$V_{Rd}$ $\mathrm{[kN]}$',
-                  'd_wid': r'$d_{wid}$ $\mathrm{[mm]}$',
-                  't_stiffc': r'$t_{stiff,c}$ $\mathrm{[mm]}$',
-                  'h_wid': r'$h_{wid}$ $\mathrm{[mm]}$',
-                  'Offset': r'$Offset$ $\mathrm{[mm]}$',
-                  'h_x': r'$h_x$ $\mathrm{[mm]}$',
-                  'h_y': r'$h_y$ $\mathrm{[mm]}$',
-                  'b_x': r'$b_x$ $\mathrm{[mm]}$',
-                  'b_y': r'$b_y$ $\mathrm{[mm]}$',
-                  'A_y': r'$A_y$ $\mathrm{[mm^2]}$',
-                  'Iy_y': r'$I_{y,y}$ $\mathrm{[mm^4]}$',
-                  'tw_y': r'$t_{w,y}$ $\mathrm{[mm]}$',
-                  'Steel grade_y': r'$f_{y,y}$ $\mathrm{[MPa]}$',
-                  't_stiffb': r'$t_{stiff,b}$ $\mathrm{[mm]}$',
-                  'tf_x': r'$t_{f,x}$ $\mathrm{[mm]}$',
-                  'tf_y': r'$t_{f,y}$ $\mathrm{[mm]}$',
-                  'Av_x': r'$A_{v,x}$ $\mathrm{[mm^2]}$',
-                  'Av_y': r'$A_{v,y}$ $\mathrm{[mm^2]}$',
-                  'Wply_y': r'$W_{ply,y}$ $\mathrm{[mm^3]}$',
-                  'Wply_x': r'$W_{ply,x}$ $\mathrm{[mm^3]}$',
-                  'tau_x': r'$\tau_{x}$ $\mathrm{[MPa]}$',
-                  'tau_y': r'$\tau_{y}$ $\mathrm{[MPa]}$',
-                  'Mpl_x': r'$M_{pl,x}$ $\mathrm{[kNm]}$',
-                  'Mpl_y': r'$M_{pl,y}$ $\mathrm{[kNm]}$',
-                  'Vpl_y': r'$V_{pl,y}$ $\mathrm{[kN]}$',
-                  'Vpl_x': r'$V_{pl,x}$ $\mathrm{[kN]}$',
-                  't_wwid': r'$t_{wwid}$ $\mathrm{[mm]}$',
-                  't_fwid': r'$t_{fwid}$ $\mathrm{[mm]}$',
-                  'Cat_h': r'$Cat_{h}$ $\mathrm{[mm]}$',
-                  'Cat_t_stiffc': r'$Cat_{t_{stiff,c}}$ $\mathrm{[mm]}$',
-                  'b_wid': r'$b_{wid}$ $\mathrm{[mm]}$',
-                  'M': r'$M$ $\mathrm{[kNm]}$',
-                  'V': r'$V$ $\mathrm{[kN]}$',
-                }
+        self.feature_labels = {
+            'A_x': r'$\mathrm{A_x\ [mm^2]}$',
+            'Iy_x': r'$\mathrm{I_{y,x}\ [mm^4]}$',
+            'tw_x': r'$\mathrm{t_{w,x}\ [mm]}$',
+            'Steel grade_x': r'$\mathrm{f_{y,x}\ [MPa]}$',
+            'M_Rd': r'$\mathrm{M_{Rd}\ [kNm]}$',
+            'V_Rd': r'$\mathrm{V_{Rd}\ [kN]}$',
+            'd_wid': r'$\mathrm{d_{wid}\ [mm]}$',
+            't_stiffc': r'$\mathrm{t_{stiff,c}\ [mm]}$',
+            'h_wid': r'$\mathrm{h_{wid}\ [mm]}$',
+            'Offset': r'$\mathrm{Offset\ [mm]}$',
+            'h_x': r'$\mathrm{h_x\ [mm]}$',
+            'h_y': r'$\mathrm{h_y\ [mm]}$',
+            'b_x': r'$\mathrm{b_x\ [mm]}$',
+            'b_y': r'$\mathrm{b_y\ [mm]}$',
+            'A_y': r'$\mathrm{A_y\ [mm^2]}$',
+            'Iy_y': r'$\mathrm{I_{y,y}\ [mm^4]}$',
+            'tw_y': r'$\mathrm{t_{w,y}\ [mm]}$',
+            'Steel grade_y': r'$\mathrm{f_{y,y}\ [MPa]}$',
+            't_stiffb': r'$\mathrm{t_{stiff,b}\ [mm]}$',
+            'tf_x': r'$\mathrm{t_{f,x}\ [mm]}$',
+            'tf_y': r'$\mathrm{t_{f,y}\ [mm]}$',
+            'Av_x': r'$\mathrm{A_{v,x}\ [mm^2]}$',
+            'Av_y': r'$\mathrm{A_{v,y}\ [mm^2]}$',
+            'Wply_y': r'$\mathrm{W_{ply,y}\ [mm^3]}$',
+            'Wply_x': r'$\mathrm{W_{ply,x}\ [mm^3]}$',
+            'tau_x': r'$\mathrm{\tau_x\ [MPa]}$',
+            'tau_y': r'$\mathrm{\tau_y\ [MPa]}$',
+            'Mpl_x': r'$\mathrm{M_{pl,x}\ [kNm]}$',
+            'Mpl_y': r'$\mathrm{M_{pl,y}\ [kNm]}$',
+            'Vpl_y': r'$\mathrm{V_{pl,y}\ [kN]}$',
+            'Vpl_x': r'$\mathrm{V_{pl,x}\ [kN]}$',
+            't_wwid': r'$\mathrm{t_{wwid}\ [mm]}$',
+            't_fwid': r'$\mathrm{t_{fwid}\ [mm]}$',
+            'Cat_h': r'$\mathrm{Cat_h\ [mm]}$',
+            'Cat_t_stiffc': r'$\mathrm{Cat_{t_{stiff,c}}\ [mm]}$',
+            'b_wid': r'$\mathrm{b_{wid}\ [mm]}$',
+            'M': r'$\mathrm{M\ [kNm]}$',
+            'V': r'$\mathrm{V\ [kN]}$',
+        }
 
     def repeated_colors(self, values):
         """Return a list of colors from the colormap, repeated if necessary."""
@@ -128,3 +133,12 @@ class Plotting_Parameters:
         print("Available Font Families in Matplotlib:")
         for font_family in available_font_families:
             print(f"- {font_family}")
+
+    def get_figsize(self,fraction, document_width=15.92, aspect_ratio=None):
+        width_in = document_width / 2.54 * fraction
+
+        if aspect_ratio is None:
+            aspect_ratio = (5 ** 0.5 - 1) / 2  # golden ratio
+
+        height_in = width_in / aspect_ratio
+        return width_in, height_in
