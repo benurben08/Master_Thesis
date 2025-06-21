@@ -15,6 +15,7 @@
 !MC_Dropout_Quantification.ipynb
 !DNN_MV_Interaction_Analysis.ipynb
 !requirements.txt
+!README.md
 
 !AL_API/
 AL_API/*
