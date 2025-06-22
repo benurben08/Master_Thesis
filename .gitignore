@@ -8,13 +8,13 @@
 !DataReader.py
 !DNN_FullModel.ipynb
 !CVAE_FullModel.ipynb
+!CVAE_Interpretability_Analysis.ipynb
 !CVAE_LossBalancing.ipynb
 !Design_Optimization_Interactive.ipynb
 !Design_Optimization_Workflow.ipynb
 !Feasible_Hypercubemap_Generation.ipynb
 !MC_Dropout_Quantification.ipynb
 !DNN_MV_Interaction_Analysis.ipynb
-!requirements.txt
 !README.md
 
 !AL_API/
@@ -26,4 +26,5 @@ AL_API/*
 !Environment/
 Environment/*
 !Environment/API.yaml
+!Environment/requirements.txt
 
