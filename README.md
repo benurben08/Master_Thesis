@@ -16,13 +16,15 @@ This respository complements the conceptually introduced Methodology and Results
 The necessary modules can be obtained through the conda environment file `MA.yaml` or the `requirements.txt`.
 
 ## Table of Contents
-- Analysis
+- Structural Analysis
   - Deep Neural Network
+    - `DNN_FullModel.py`
+    - 
   - Active Learning
-    - Feasible Hypercubemap
+    - `AL_API/Local_Active_Learning.ipynb`
     - Local Active Learning
     - Global Active Learning
-- Design
+- Structural Design
   - Inverse Machine Learning
     - Conditional Variational Autoencoder
   - Forward Optimization
