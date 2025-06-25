@@ -18,17 +18,28 @@ The necessary modules can be obtained through the conda environment file `MA.yam
 ## Table of Contents
 - Structural Analysis
   - Deep Neural Network
-    - `DNN_FullModel.py`
-    - 
+    - `DNN.py`
+    - `DNN_FullModel.ipynb`
+    - `DNN_MV_Interaction_Analysis.ipynb`
   - Active Learning
-    - `AL_API/Local_Active_Learning.ipynb`
-    - Local Active Learning
-    - Global Active Learning
+    - `AL_API/Local_AL.ipynb`
+    - `AL_API/GLobal_AL.ipynb`
+    - `AL_API/LocalObjectives.ipynb`
 - Structural Design
   - Inverse Machine Learning
-    - Conditional Variational Autoencoder
+    - `CVAE.py`
+    - `CVAE_FullModel.ipynb`
+    - `CVAE_LossBalancing.ipynb`
+    - `CVAE_Interpretability_Analysis.ipynb`
   - Forward Optimization
-    - Search Algorithm 
+    - `Design_Optimization_Workflow.ipynb`
+    - `Design_Optimization_Interactive.ipynb`
+- Interpretability
+  - `MC_Dropout_Quantification.ipynb`
+  - `Feasibly_Hypercubemap_Generation.ipynb`
+- Utils
+  - `Datareader.py`
+  - `Settings.py`
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
