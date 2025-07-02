@@ -52,15 +52,11 @@ and analysis.
 **Parametrized Steel Profile**
 ![alt text](Images/Profil2D.png)
 
-**Architecture of Conditional Variational Autoencoder**
-![alt text](Images/Architecture_cVAE.png)
-
 **Local Active Learning Framework**
 ![alt text](Images/LAL_Workflow.png)
 
 **Global Active Learning Framework**
 ![alt text](Images/GAL_Workflow.png)
-
 
 
 ## Dataset
