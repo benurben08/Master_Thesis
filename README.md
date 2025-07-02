@@ -6,7 +6,7 @@
 **Period**: 2025 March - June<br>
 **Institution**: ETH Zürich, Institute of Structural Engineering (IBK)
 
-![alt text](image_url_or_path)
+![alt text](Overview_08.png)
 
 This respository complements the conceptually introduced Methodology and Results in the Master Thesis.
 
