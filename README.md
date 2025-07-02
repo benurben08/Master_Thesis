@@ -50,7 +50,7 @@ and analysis.
 ![alt text](Images/Workflow_04.png)
 
 **Parametrized Steel Profile**
-![alt text](Images/Paramters.png)
+![alt text](Images/Profile2D.png)
 
 **Architecture of Conditional Variational Autoencoder**
 ![alt text](Images/Architecture_cVAE.png)
