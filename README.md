@@ -45,17 +45,21 @@ and analysis.
 
 ## Visualizations outlining the introduced Concepts
 
+**Workflow of forward Predictions**
+
 ![alt text](Images/Workflow_04.png)
 
+**Parametrized Steel Profile**
 ![alt text](Images/Paramters.png)
 
-![alt text](Images/DNN.png)
-
+**Architecture of Conditional Variational Autoencoder**
 ![alt text](Images/Architecture_cVAE.png)
 
-![alt text](Images/LAL Workflow.png)
+**Local Active Learning Framework**
+![alt text](Images/LAL_Workflow.png)
 
-![alt text](Images/GAL Workflow.png)
+**Global Active Learning Framework**
+![alt text](Images/GAL_Workflow.png)
 
 
 
