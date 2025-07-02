@@ -43,15 +43,19 @@ demonstrating practical applications and outlining paths for future re nement, t
 contributes to building the foundation for intelligent, data-driven tools in structural design 
 and analysis.
 
-## Concepts Introduced
+## Visualizations outlining the introduced Concepts
+
+![alt text](Images/Workflow_04.png)
 
 ![alt text](Images/Paramters.png)
 
-![alt text](Images/Paramters.png)
+![alt text](Images/DNN.png)
 
-![alt text](Images/Paramters.png)
+![alt text](Images/Architecture_cVAE.png)
 
-![alt text](Images/Paramters.png)
+![alt text](Images/LAL Workflow.png)
+
+![alt text](Images/GAL Workflow.png)
 
 
 
