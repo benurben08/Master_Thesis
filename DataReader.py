@@ -1,4 +1,9 @@
-# %%
+'''
+**Author**: Benjamin Urben<br>
+**Email**: burben@student.ethz.ch / benjamin.urben@hotmail.ch<br>
+**Context**: Master Thesis on "Use of Machine Learning in the Design and Analysis for Steel Connections"<br>
+**Institution**: ETH Zürich, Institute of Structural Engineering (IBK)
+'''
 import os
 import pandas as pd
 from Settings import Directory

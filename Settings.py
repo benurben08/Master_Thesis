@@ -1,3 +1,10 @@
+'''
+**Author**: Benjamin Urben<br>
+**Email**: burben@student.ethz.ch / benjamin.urben@hotmail.ch<br>
+**Context**: Master Thesis on "Use of Machine Learning in the Design and Analysis for Steel Connections"<br>
+**Institution**: ETH Zürich, Institute of Structural Engineering (IBK)
+'''
+
 import os
 import matplotlib as mpl
 import sys
@@ -116,6 +123,9 @@ class Plotting_Parameters:
             'b_wid': r'$\mathrm{b_{wid}\ [mm]}$',
             'M': r'$\mathrm{M\ [kNm]}$',
             'V': r'$\mathrm{V\ [kN]}$',
+            'fy_x': r'$\mathrm{f_{y,x}\ [MPa]}$',
+            'fy_y': r'$\mathrm{f_{y,y}\ [MPa]}$',
+            'Gamma': r'$\mathrm{\gamma\ [\degree]}$',
         }
 
     def repeated_colors(self, values):

@@ -17,6 +17,15 @@
 !DNN_MV_Interaction_Analysis.ipynb
 !CVAE_Interpretability_Analysis.ipynb
 !README.md
+!Data_Visualization.ipynb
+!Reduced_AL_Main.ipynb
+!Reduced_AL_BALD.ipynb
+!Reduced_AL_Conclusion.ipynb
+!ReducedAL_MethodsComparison.ipynb
+!DNN_FeatureDropComparison.ipynb
+!Feasibility_Quantification.ipynb
+!Plot_Functions.py
+!Helper_Functions.py
 
 !AL_API/
 AL_API/*
@@ -24,6 +33,7 @@ AL_API/*
 !AL_API/LocalObjectives.ipynb
 !AL_API/Global_AL.ipynb
 !AL_API/DNN_Retrained.ipynb
+!ActiveLearning.py
 
 !Environment/
 Environment/*

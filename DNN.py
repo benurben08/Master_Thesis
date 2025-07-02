@@ -1,9 +1,8 @@
 '''
-Author: Benjamin Urben
-Email: burben@student.ethz.ch / benjamin.urben@hotmail.ch
-Context: Master Thesis on "Use of Conditional Variational Autoencoder (cVAE) in the design of connections"
-Institution: ETH Zürich, Institute of Structural Engineering (IBK)
-Description: This file contains the class of a Deep Neural Network (DNN) for regression tasks.
+**Author**: Benjamin Urben<br>
+**Email**: burben@student.ethz.ch / benjamin.urben@hotmail.ch<br>
+**Context**: Master Thesis on "Use of Machine Learning in the Design and Analysis for Steel Connections"<br>
+**Institution**: ETH Zürich, Institute of Structural Engineering (IBK)
 '''
 
 import torch
