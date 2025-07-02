@@ -2,9 +2,11 @@
 
 **Author**: Benjamin Urben<br>
 **Email**: burben@student.ethz.ch / benjamin.urben@hotmail.ch<br>
-**Context**: Master Thesis on "Use of Conditional Variational Autoencoder (cVAE) in the design of connections"<br>
+**Context**: Master Thesis on "Use of Machine Learning in the Design and Analysis of Steel Connections"<br>
 **Period**: 2025 March - June<br>
 **Institution**: ETH Zürich, Institute of Structural Engineering (IBK)
+
+![alt text](image_url_or_path)
 
 This respository complements the conceptually introduced Methodology and Results in the Master Thesis.
 
@@ -16,23 +18,29 @@ This respository complements the conceptually introduced Methodology and Results
 The necessary modules can be obtained through the conda environment file `MA.yaml` or the `requirements.txt`.
 
 ## Table of Contents
-- Analysis
+- Structural Analysis
   - Deep Neural Network
+    - `DNN.py`
+    - `DNN_FullModel.ipynb`
+    - `DNN_MV_Interaction_Analysis.ipynb`
   - Active Learning
-    - Feasible Hypercubemap
-    - Local Active Learning
-    - Global Active Learning
-- Design
+    - `AL_API/Local_AL.ipynb`
+    - `AL_API/GLobal_AL.ipynb`
+    - `AL_API/LocalObjectives.ipynb`
+- Structural Design
   - Inverse Machine Learning
-    - Conditional Variational Autoencoder
+    - `CVAE.py`
+    - `CVAE_FullModel.ipynb`
+    - `CVAE_LossBalancing.ipynb`
+    - `CVAE_Interpretability_Analysis.ipynb`
   - Forward Optimization
-    - Search Algorithm 
+    - `Design_Optimization_Workflow.ipynb`
+    - `Design_Optimization_Interactive.ipynb`
+- Interpretability
+  - `MC_Dropout_Quantification.ipynb`
+  - `Feasibly_Hypercubemap_Generation.ipynb`
+- Utils
+  - `Datareader.py`
+  - `Settings.py`
 
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
